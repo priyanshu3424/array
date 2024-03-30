@@ -1,28 +1,28 @@
-#include <iostream> // Header file for input/output stream
-using namespace std; // Using the standard namespace
+#include <iostream> 
+using namespace std; 
 
-int main() // Main function
+int main() 
 {
-    int array1[] = {1, 5, 7, 5, 8, 9, 11, 11, 2, 5, 6}; // Declaration and initialization of the array
-    int s1 = sizeof(array1) / sizeof(array1[0]); // Calculate the size of the array
+    int array1[] = {1, 5, 7, 5, 8, 9, 11, 11, 2, 5, 6};
+    int s1 = sizeof(array1) / sizeof(array1[0]); 
 
-    cout << "Original array: "; // Output label for original array
+    cout << "Original array: "; 
 
-    for (int i = 0; i < s1; i++) // Loop to output elements of the original array
+    for (int i = 0; i < s1; i++) 
         cout << array1[i] << " ";
 
-    cout << "\nUnique elements of the said array: "; // Output label for unique elements
+    cout << "\nUnique elements of the said array: "; 
 
-    for (int i = 0; i < s1; i++) // Loop to find and output unique elements
+    for (int i = 0; i < s1; i++) 
     {
         int j;
-        for (j = 0; j < i; j++) // Inner loop to check for duplicates until the current index i
+        for (j = 0; j < i; j++) 
         {
-            if (array1[i] == array1[j]) // If a duplicate is found
-                break; // Break the loop
+            if (array1[i] == array1[j])
+                break; 
         }
-        if (i == j) // If the index is equal to the inner loop's index j
-            cout << array1[i] << " "; // Output the unique element at index i
+        if (i == j) 
+            cout << array1[i] << " "; 
     }
-    return 0; // Return 0 to indicate successful execution
+    return 0; 
 }
