@@ -1,5 +1,3 @@
-// C++ Program to Illustrate How to Find the Size of an 
-// Array 
 #include <iostream> 
 using namespace std; 
 
