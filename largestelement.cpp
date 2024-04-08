@@ -1,25 +1,25 @@
 #include <algorithm>
-#include<iostream> // Header file for input/output stream
-using namespace std; // Using the standard namespace
+#include<iostream> 
+using namespace std; 
 
-int find_largest(int nums[], int n) { // Function definition for finding the largest element in an array
-  return *max_element(nums, nums + n); // Return the maximum element in the array using max_element from algorithm library
+int find_largest(int nums[], int n) { 
+  return *max_element(nums, nums + n); 
 }
 
-int main() { // Main function where the program execution starts
-  int nums[] = { // Declaring and initializing an integer array
+int main() { 
+  int nums[] = { 
     5,
     4,
     9,
     12,
     8
   };
-  int n = sizeof(nums) / sizeof(nums[0]); // Determining the number of elements in the array
+  int n = sizeof(nums) / sizeof(nums[0]);
 
-  cout << "Original array:"; // Output message indicating the original array is being displayed
-  for (int i=0; i < n; i++) // Loop to display each element of the array
-    cout << nums[i] <<" "; // Output each element of the array
+  cout << "Original array:"; 
+  for (int i=0; i < n; i++) 
+    cout << nums[i] <<" "; 
 
-  cout << "\nLargest element of the said array: "<< find_largest(nums, n); // Output message showing the largest element in the array
-  return 0; // Return statement indicating successful execution and program termination
+  cout << "\nLargest element of the said array: "<< find_largest(nums, n); 
+  return 0; 
 }
