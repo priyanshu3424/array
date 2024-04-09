@@ -10,7 +10,6 @@ void bubbleSort(int arr[], int n)
 			if (arr[j] > arr[j + 1]) 
 				swap(arr[j], arr[j + 1]); 
 } 
-
 void printArray(int arr[], int size) 
 { 
 	int i; 
@@ -18,7 +17,6 @@ void printArray(int arr[], int size)
 		cout << arr[i] << " "; 
 	cout << endl; 
 } 
-
 int main() 
 { 
 	int arr[] = { 5, 1, 4, 2, 8}; 
