@@ -7,13 +7,11 @@ void printArray(int arr[],int n){
     }
     cout<<endl;
 }
-
 void sortOne(int arr[],int n) {
 
     int left=0, right=n-1;
 
     while (left<right){
-
         while (arr[left]==0 && left<right){
             left++;
         }
