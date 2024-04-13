@@ -15,7 +15,6 @@ void insertionSort(int arr[], int n)
 		arr[j + 1] = key;
 	}
 }
-
 void printArray(int arr[], int n)
 {
 	int i;
@@ -23,7 +22,6 @@ void printArray(int arr[], int n)
 		cout << arr[i] << " ";
 	cout << endl;
 }
-
 int main()
 {
 	int arr[] = { 12, 11, 13, 5, 6 };
