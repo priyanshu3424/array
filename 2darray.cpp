@@ -11,6 +11,8 @@ int main(){
             cin >> arr[i][j];
         }
     }
+
+    //print
     for(int i=0;i<3;i++){
         for(int j=0;j<4;j++){
             cout<<arr[i][j]<<" ";
@@ -18,4 +20,5 @@ int main(){
         }
         cout<<endl;
     }
+    return 0;
 }
