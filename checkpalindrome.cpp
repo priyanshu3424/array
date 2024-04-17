@@ -3,11 +3,10 @@ using namespace std;
 
 string isPalindrome(string S)
 {
-	string P = S;
-
+	string P=S;
 	reverse(P.begin(), P.end());
 
-	if (S == P) {
+	if (S==P) {
 		return "Yes";
 	}
 	else {
@@ -17,8 +16,7 @@ string isPalindrome(string S)
 
 int main()
 {
-	string S = "ABCDCBA";
-	cout << isPalindrome(S);
-
+	string S="ABCDCBA";
+	cout<< isPalindrome(S);
 	return 0;
 }
