@@ -5,19 +5,12 @@ char getMaxOccurringChar(string str)
 { 
 	unordered_map<char,int>mp;
 	
-	// to store length of string
-	int n = str.length();
-	
-	// to store answer 
+	int n = str.length(); 
 	char ans;
 	
-	// to check count of answer character is less or greater
-	// than another elements count
 	int cnt=0;
 	
-	// traverse the string 
 	for(int i=0 ;i<n ; i++){
-		// push element into map and increase its frequency 
 		mp[str[i]]++;
 		
 		if(cnt < mp[str[i]]){
@@ -25,7 +18,6 @@ char getMaxOccurringChar(string str)
 			cnt = mp[str[i]];
 		}
 	}
-	
 	return ans;
 }
 
